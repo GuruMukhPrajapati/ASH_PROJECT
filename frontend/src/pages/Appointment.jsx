@@ -155,13 +155,13 @@ const Appointment = () => {
                         <p className='text-sm text-gray-600 max-w-[700px] mt-1'>{docInfo.about}</p>
                     </div>
 
-                    <p className='text-gray-600 font-medium mt-4'>Appointment fee: <span className='text-gray-800'>{currencySymbol}{docInfo.fees}</span> </p>
+                    <p className='text-gray-600 font-medium mt-4'> Average Charge: <span className='text-gray-800'>{currencySymbol}{docInfo.fees}</span> </p>
                 </div>
             </div>
 
             {/* Booking slots */}
             <div className='sm:ml-72 sm:pl-4 mt-8 font-medium text-[#565656]'>
-                <p >Booking slots</p>
+                <p >Meeting slots</p>
                 <div className='flex gap-3 items-center w-full overflow-x-scroll mt-4'>
                     {docSlots.length && docSlots.map((item, index) => (
                         <div onClick={() => setSlotIndex(index)} key={index} className={`text-center py-6 min-w-16 rounded-full cursor-pointer ${slotIndex === index ? 'bg-primary text-white' : 'border border-[#DDDDDD]'}`}>
@@ -177,7 +177,7 @@ const Appointment = () => {
                     ))}
                 </div>
 
-                <button onClick={bookAppointment} className='bg-primary text-white text-sm font-light px-20 py-3 rounded-full my-6'>Book an appointment</button>
+                <button onClick={bookAppointment} className='bg-primary text-white text-sm font-light px-20 py-3 rounded-full my-6'>Book A Slot</button>
             </div>
 
             {/* Listing Releated Doctors */}
