@@ -18,7 +18,7 @@ const Banner = () => {
                 </p>
                 <div className='flex gap-4 m-auto md:m-0'>
                     <button 
-                        onClick={() => { navigate('/hire'); window.scrollTo(0, 0); }} 
+                        onClick={() => { navigate('/doctors'); window.scrollTo(0, 0); }} 
                         className='bg-[#B260F7] text-white text-sm px-8 py-3 rounded-full hover:scale-105 transition-all duration-300'
                     >
                         Hire Talent

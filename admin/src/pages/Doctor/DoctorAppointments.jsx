@@ -27,7 +27,6 @@ const DoctorAppointments = () => {
           <p>#</p>
           <p>Client</p>
           <p>Date & Time</p>
-          <p>Freelancer</p>
           <p>Fees</p>
           <p>Action</p>
         </div>
